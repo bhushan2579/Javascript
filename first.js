@@ -32,60 +32,60 @@
 // console.log(isfollow)
 
 
+// const Student = {
+//     fullName : "Rahul Patil",
+//     age: 20,
+//     marks : 82,
+//     isPass : true
+// };
+// console.log(Student);
+// console.log(Student["fullName"]);
+// console.log(Student["age"]);
+// console.log(Student["marks"]);
+// console.log(Student["isPass"]);
+
+
+// let a = 3
+
+// let b = 5 
+
+// console.log(a = a )
+
+// console.log(b = b )
+
+// console.log("a = ",b," & b = ",a);
+//  a = a + 1 
+//  console.log(a)
+//  console.log(a * 3)
+//  console.log(a + 2)
+//  console.log(b - 5)
+//  console.log(b / 3)
+//  console.log(a ** 2 )
+//  console.log(b % 7)
+ 
+ 
+ 
+ //Unary Operator
+ let c = 9;
+ let d = 8;
+ console.log("c = ",c," & d = ",d)
+ console.log(c ++ )
+ console.log("c =", c) 
+ console.log(-- d)
+ console.log("d = ", d)
 
 
 
 
+//  Assignement Operator
+//   let k = 4;
+//   let l =5;
+   
+//   k != 4; 
+// console.log("k = ", k) ;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const Student = {
-    fullName : "Rahul",
-    age: 20,
-    marks : 82,
-    isPass : true
-};
-console.log(Student);
-console.log(Student["fullName"]);
-
-
-let a = 3
-let b = 5 
-
-console.log(a)
-console.log(b)
-
-// let c = a
-// console.log(c)
-a = b
-console.log(a)
- b= a
-console.log(b)
+// Comparison Operators
+let k = 4 ;
+let l = "4" ;
+ 
+console.log("4 != 4 ", k != l);
