@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet With Star and Hass</title>
+</head>
+<body>
+ <script>
+    // let row = Number(prompt("Enter number of rows"))
+    // console.log(row,"rows")
+    // let column = Number(prompt("Enter number of columns"))
+    // console.log(column,"columns")
+    // let mid = Math.floor(column/2)
+    // for(let i = 1 ; i<=row; i++){
+    //     for( let j =1; j<=column; j++){
+    //         if (i==1 || i==row ||  j==mid  ) {
+    //             document.write("*")
+    //         } else {
+    //             document.write("&nbsp &nbsp")
+    //         }
+    //     }
+    //     document.write("<br>")
+    // }
+    
+    // document.write("<hr>")
+
+    //  F letter 
+    for(let i=0; i<=5; i++){
+        for(j=0; j<=5; j++){
+            if( i==0 || i==5 ||  j==0 || j==5 ){
+                document.write("*")
+                
+            }else{
+                document.write("#")
+            }
+        }
+        document.write("<br>")
+    }
+
+    document.write("<hr>")
+
+    // holo or D
+    for( let i=0; i<=5; i++){
+        for( j=0;j<=6; j++){
+            if( i==0 || i==5 || j==0 || j==5){
+                document.write("*")
+            }else{
+                document.write("&nbsp &nbsp")
+            }
+        }
+        document.write("<br>")
+    }
+    document.write("D or Holo")
+    document.write("<hr>")
+
+// A 
+let mid = 3//Math.floor(6/2)
+    for (let i= 1; i<= 5; i++) {
+        for (let j = 1; j <=7 ; j++) {
+
+            if (i == 1 || j == 1 || j == 7 || i == mid) {
+                document.write("*")
+            }
+            else {
+                document.write("&nbsp&nbsp")
+            }
+
+        }
+        document.write("<br>")
+    }
+    document.write("A")
+    document.write("<hr>");
+
+    //B
+    mid = 3
+    for( let i=1; i<=5; i++){
+        for( j=1;j<=5; j++){
+            if (i==1 || i==5 || j==1 ||j==5 || i == mid) {
+                document.write("*")
+            } else {
+                document.write("&nbsp &nbsp")
+            }
+        }
+        document.write("<br>")
+    }
+    document.write("B")
+    document.write("<hr>")
+
+    // C 
+    for( let i=0; i<=5; i++){
+        for( j=0;j<=4; j++){
+            if( i==0 || i==5 || j==0 ){
+                document.write("*")
+                
+            }else{
+                document.write("&nbsp &nbsp")
+            }
+        }
+        document.write("<br>")
+    }
+    document.write("C")
+    document.write("<hr>")
+    
+    // E
+    mid = 3
+    for( let i=1; i<=5; i++){
+        for( j=1;j<=5; j++){
+            if (i==1 || i==5 || j==1  || i == mid) {
+                document.write("*")
+            } else {
+                document.write("&nbsp &nbsp")
+            }
+        }
+        document.write("<br>")
+    }
+    document.write("E")
+    document.write("<hr>")
+
+    //F
+    mid = 3
+    for( let i=1; i<=5; i++){
+        for( j=1;j<=5; j++){
+            if (i==1  || j==1  || i == mid) {
+                document.write("*")
+            } else {
+                document.write("&nbsp &nbsp")
+            }
+        }
+        document.write("<br>")
+    }
+    document.write("F")
+    document.write("<hr>")
+    
+    //H
+    mid = 3
+    for( let i=1; i<=5; i++){
+        for( j=1;j<=6; j++){
+            if ( j==1  || i == mid || j==5) {
+                document.write("*")
+            } else {
+                document.write("&nbsp &nbsp")
+            }
+        }
+        document.write("<br>")
+    }
+    document.write("H")
+    document.write("<hr>")
+
+    //I
+    mid = 3
+        for( let i=1; i<=5; i++){
+            for( j=1;j<=7; j++){
+                if (i==1 || j==mid|| i==5 ) {
+                    document.write("*")
+                } else {
+                    document.write("&nbsp &nbsp")
+                }
+            }
+            document.write("<br>")
+        }
+        document.write("I")
+        document.write("<hr>")
+    //J
+
+        for (let row = 1; row <= 5; row++) {
+        //document.write("*")
+        for (let column = 1; column <= 5; column++) {
+            if (row == 1 ) {
+                document.write("*")
+            }
+            else if(row==5 && column<=3){
+                document.write("*")
+            }
+            else if( column==3){
+                document.write("*")
+            }
+            else {
+                document.write("&nbsp&nbsp")
+            }
+
+        }
+        document.write("<br>")
+        }
+        document.write("J")
+        document.write("<hr>");
+      
+ </script>
+</body>
+</html>
