@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let value = "";
+        let arr = ["hrishikesh", "atiq", "bhushan", "sam"]
+        value = prompt("enter your name:")
+
+        if(arr.includes(value)==true){
+            console.log("welcome to the class");
+            let otp=generateotp();
+            console.log("this is your otp : " + otp)
+            setTimeout(correctotp,2000,otp)
+            
+
+        }
+        else{
+            console.log("you are not a student");
+        }
+       
+
+
+        function correctotp(otp){
+            let val=prompt("enter your otp:")
+            if(val==otp){
+                console.log("otp accepted")
+            }
+            else{
+                console.log("otp not valid")
+            }
+        }
+        
+
+
+        function generateotp() {
+
+            let otp = "";
+            for (let i = 0; i < 4; i++) {
+                otp = otp + Math.floor(Math.random() * 10);
+            }
+            return otp;
+        }
+    </script>
+</body>
+
+</html>

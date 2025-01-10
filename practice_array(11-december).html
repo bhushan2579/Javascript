@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fname = [ "bhushan","ujwal","ritesh","shivam","atul"]
+         console.log(fname,"unordered names")
+         fname.sort() 
+         console.log(fname,"ordered names")
+
+         const arr = ["bhushan",25,"Thane West",9987700000,"buddhabhushan7@gmail.com"]
+         arr.push("93%","jonathan")
+         arr.pop(4)
+         console.log(arr)
+        
+
+         console.log(arr[0],arr[4])
+         arr.sort()
+         console.log(arr)
+
+         const brr = ["a","b","c","d","e"]
+         for(let i=0;i < brr.length;i++){
+            console.log(brr[i])
+         }
+         
+
+//patteren printing
+//Upper left triangle
+  let n=7;
+   for(let i =1; i <= n; i++){
+    let str = "*";
+    let space =' ';
+    console.log(str.repeat(i) + space.repeat((n-i)))
+    
+   }
+
+   //upper right triangle
+   let o =7;
+   for(let j = 1; j <= o; j ++){
+    let dtr = "*";
+    let space =' ';
+    console.log(space.repeat((o-j))+dtr.repeat(j))
+   } 
+
+
+   //Downward right triangle
+   let f=7;
+   for(let s = f ;s >= 1; s --){
+    let ftr="*";
+    let space =' '
+    console.log(  space.repeat((f-s)) + ftr.repeat(s)  )
+   }
+
+
+
+   //Downward left triangle
+   let d=7;
+   for(let s = d ;s >= 1; s --){
+    let ftr="*";
+    
+    console.log(ftr.repeat(s) )
+   }
+    </script>
+</body>
+</html>

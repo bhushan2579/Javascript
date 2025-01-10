@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question_1</title>
+</head>
+<body>
+  <script>
+
+
+    //QUESTION 1
+    
+      // Find  First & Second maximun value & minimum value 
+      
+
+    //   let arra = [ 1,9,4,5];
+    //   let n = arra.length;
+    //   let highest = -Infinity;
+    //   let secondHighest = -Infinity;
+    //   for(let i= 0; i<n;i++){
+    //       if( arra[i]>highest){
+    //           secondHighest = highest;
+    //           highest = arra[i];
+    //         }
+    //     }
+      
+      
+      let arra = [ 1,9,4,5];
+      let n = arra.length;
+      
+      let highest = -Infinity;
+      let secondHighest = -Infinity;
+
+       for( let i=0;i<n;i++){
+        if(arra[i]> highest){
+            secondHighest =highest;
+            highest= arra[i];
+        }
+       }
+      console.log(highest,"Highest Value ")
+      console.log(secondHighest,"secondHighest Value ")
+      
+
+      //QUESTION 2
+      // sort a array by assending & decending order ?
+      
+      //Assecending Order Value 
+      let brr = [5,3,4,2,1,6];
+      brr = brr.sort((a, b) => a-b);
+      console.log(brr,"Assending Order")
+      
+      //Decending Order Value
+      let arr = [5,3,4,2,1,6];
+      arr = arr.sort((a, b) => a-b).reverse();
+      // console.log(typeof arr)
+      console.log(arr, "Decending Order")
+      
+      
+      </script>
+</body>
+</html>
+

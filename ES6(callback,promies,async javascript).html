@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Async bheaviour
+      // console.log("Start")
+      // setTimeout(function(){
+      //     console.log("Hacker or Wot")
+      // },3000)
+      // console.log("End")
+
+      //Call function
+      // function myFirst (){
+      //     console.log("Hello!")
+      // }
+      // function mySecond(){
+      //     console.log("Goodbye!!")
+      // }
+      // myFirst();
+      // mySecond();
+
+      // Example 1 basic structure of callback function
+
+      function greet(name, callback) {
+        console.log(`Hello, ${name}`);
+        callback();
+      }
+      function sayGoodbye() {
+        console.log("Goodbye!");
+      }
+      greet("Jonathan", sayGoodbye);
+
+      // Example2 with setTimeout
+
+      function fetchData(callback) {
+        setTimeout(() => {
+          const data = {
+            id: 1,
+            fname: "Jonny",
+            employeCode: 2005,
+            department: "HR",
+          };
+          callback(data);
+        }, 2000);
+      }
+      fetchData((data) => {
+        console.log("Data recieved:", data);
+      });
+
+      //Example3 with how to handle errors with callbacks
+
+      function readFile(filePath, callback) {
+        let fs = require("fs");
+        fs.readFile(filePath, "utf8", (err, data) => {
+          if (err) {
+            callback(err, null);
+          } else {
+            callback(null, data);
+          }
+        });
+      }
+      readFile("example.txt", (err, data) => {
+        if (err) {
+          console.error("Error reading File:", err);
+        } else {
+          console.log("File content:", data);
+        }
+      });
+
+      // Example4 wit Asuny/Await and Promises
+
+      function fetchData() {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve({
+              id: 1,
+              name: "Jonny",
+              age: 27,
+              hack: "steel",
+              bangaer: "aakash",
+            });
+          }, 2000);
+        });
+      }
+
+      fetchData()
+        .then((data) => {
+          console.log("Data recived :", data);
+        })
+        .catch((error) => {
+          console.error("Error :", error);
+        });
+
+      // Async/Await function
+      async function getdata() {
+        try {
+          const data = await fetchData();
+          console.log("Data Recived:", data);
+        } catch (error) {
+          console.error("Error :", error);
+        }
+      }
+      getdata();
+    </script>
+  </body>
+</html>

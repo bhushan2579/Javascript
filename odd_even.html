@@ -4,62 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ODD & EVEN</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            display: flex;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(to right,blue,red);
-        }
-        form{
-            height: 550px;
-            width: 550px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: lightgrey;
-            border-radius: 10px;
-            box-shadow: 5px 5px 10px rgb(87, 87, 87);
-        }
-        #k{
-            height: 50px;
-            width: 70%;
-            border-radius: 10px;
-        }
-        #l{
-            height: 30px;
-            border-radius: 5px;
-        }
-    </style>
 </head>
 <body>
-    <form name="frm1">
-       <h2> Enter Your Name :</h2>
-        <input type="text" id="k" name="t1"> <br><br>
-        <input type="button" id="l" name="btncheck" value="COUNT VOWELS" onClick="cnt()">
-    </form>
 </body>
-    <script>
-    function cnt()
-    {
-      var s,i,ch,c;
-    c = 0;
-    s = frm1.t1.value;
-    for(i=0; i <= s. length; i++)
-    {
-        ch=s.charAt(i);
-        if(ch=="A" || ch=="a"|| ch=="E" || ch=="e" || ch=="I" || ch=="i" || ch=="O" || ch=="o"|| ch=="U" || ch=="u")
-        c++;
+
+<script>
+    let num = Number(prompt("Enter Your Value"))
+    if (num%2==0) {
+        console.log(num," It is a Even Number ")
+    } else {
+       console.log(num," It is a Odd Number ")
+        
     }
-    alert("Number Of Vowels in string are " +c);
-}
+    
 </script>
+
 </html>
 
 <!-- 
@@ -72,5 +31,6 @@
 // if (i = 0, i<= 4,i++) {
 //     console.log(i)
 // } else {
+//     console.log("invalid number")
     
 // }  -->

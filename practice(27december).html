@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Using loops with array
+
+    <script>
+        //Using loops with array
+        let num=[3,5,3,4,3,6,8]
+        console.log(num)
+
+        //classic for loop
+        // for (let i = 0; i < num.length; i++){
+        //     console.log(num[i])
+        // }
+
+
+        //forEach loop
+        num.forEach((hack)=>{
+            console.log(hack + hack)
+            // console.log(hack * hack)
+            // console.log(hack - hack)
+            // console.log(hack / hack)
+        })
+
+        //Array . from
+        let name="Jonathan";//string to array
+        let arr = Array.from(name)
+        console.log(arr)
+
+
+        //for...of loop
+           for (const i of name) {
+        console.log(i)
+        }
+
+
+        // for..in loop
+        for (const i in name) {
+            console.log(name[i])
+        }
+
+
+
+
+        // map method
+        // array map method
+        // let brr = [23,56,78]
+        // let a = brr.map((boy,index,array)=>{
+        //     console.log(boy,index,array)
+        //     return boy + index
+        // })
+        // console.log(a)
+
+        let arr2= [47,86,32,87,45]
+        arr2.filter((c)=>{
+            console.log(c)
+            return c <50
+        })
+        console.log(arr2)
+    </script>
+</body>
+</html>
